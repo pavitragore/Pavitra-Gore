@@ -12,90 +12,67 @@
 
 <header>
     <h1>Your Name</h1>
-    <p>BCA Student | Developer</p>
-
     <nav>
-        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<!-- HOME -->
-<section id="home" class="home">
-    <div class="hero">
-        <img src="your-photo.jpg" alt="Profile">
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
         <h2>Hello, I'm <span>Your Name</span></h2>
-        <p>A passionate student building modern web applications.</p>
-        <button onclick="downloadResume()">Download Resume</button>
+        <p>A passionate BCA student building modern web applications.</p>
+        <button onclick="showMessage()">Contact Me</button>
+    </div>
+
+    <div class="hero-img">
+        <img src="your-photo.jpg" alt="Profile">
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="section">
     <h2>About Me</h2>
     <p>
-        I am a BCA student interested in software development and web technologies.
-        I enjoy creating projects, learning new skills, and improving my coding abilities.
+        I am a dedicated student with strong interest in software development.
+        I love creating projects and learning new technologies.
     </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="section">
     <h2>Skills</h2>
 
-    <div class="skills-container">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">C Programming</div>
-        <div class="skill-card">Node.js</div>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C Programming</div>
     </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="section">
     <h2>Projects</h2>
 
-    <div class="grid">
+    <div class="cards">
         <div class="card">
             <h3>Bus Booking API</h3>
-            <p>REST API using Node.js & Express</p>
+            <p>Node.js & Express backend system</p>
         </div>
 
         <div class="card">
             <h3>Portfolio Website</h3>
-            <p>Responsive personal portfolio</p>
+            <p>Modern responsive personal portfolio</p>
         </div>
     </div>
 </section>
 
-<!-- CERTIFICATES -->
-<section id="certificates">
-    <h2>Certificates</h2>
-
-    <div class="grid">
-        <img src="certificate1.jpg" alt="Certificate">
-        <img src="certificate2.jpg" alt="Certificate">
-    </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Completed Web Development Course</li>
-        <li>Participated in Coding Competition</li>
-        <li>Strong Academic Performance</li>
-    </ul>
-</section>
-
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: your@email.com</p>
     <p>Phone: 1234567890</p>
