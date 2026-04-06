@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>BCA Student | Developer</p>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <div class="hero">
+        <img src="your-photo.jpg" alt="Profile">
+        <h2>Hello, I'm <span>Your Name</span></h2>
+        <p>A passionate student building modern web applications.</p>
+        <button onclick="downloadResume()">Download Resume</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a BCA student interested in software development and web technologies.
+        I enjoy creating projects, learning new skills, and improving my coding abilities.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">C Programming</div>
+        <div class="skill-card">Node.js</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Bus Booking API</h3>
+            <p>REST API using Node.js & Express</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio</p>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="grid">
+        <img src="certificate1.jpg" alt="Certificate">
+        <img src="certificate2.jpg" alt="Certificate">
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Completed Web Development Course</li>
+        <li>Participated in Coding Competition</li>
+        <li>Strong Academic Performance</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>Phone: 1234567890</p>
+</section>
+
+<footer>
+    <p id="footer-text"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
