@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -13,23 +13,23 @@
 <header>
     <h1>Your Name</h1>
     <nav>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-text">
-        <h2>Hello, I'm <span>Your Name</span></h2>
-        <p>A passionate BCA student building modern web applications.</p>
-        <button onclick="showMessage()">Contact Me</button>
-    </div>
-
-    <div class="hero-img">
+<!-- HOME -->
+<section id="home" class="home">
+    <div class="hero">
         <img src="your-photo.jpg" alt="Profile">
+        <h2>Hello, I'm <span>Your Name</span></h2>
+        <p>BCA Student | Future Software Developer</p>
+        <button onclick="showMessage()">Hire Me</button>
     </div>
 </section>
 
@@ -37,8 +37,8 @@
 <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-        I am a dedicated student with strong interest in software development.
-        I love creating projects and learning new technologies.
+        I am a BCA student passionate about programming and web development.
+        My goal is to become a skilled software developer and build innovative solutions.
     </p>
 </section>
 
@@ -61,14 +61,34 @@
     <div class="cards">
         <div class="card">
             <h3>Bus Booking API</h3>
-            <p>Node.js & Express backend system</p>
+            <p>Developed REST API using Node.js & Express</p>
         </div>
 
         <div class="card">
             <h3>Portfolio Website</h3>
-            <p>Modern responsive personal portfolio</p>
+            <p>Personal responsive portfolio using HTML, CSS, JS</p>
         </div>
     </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+    <h2>Certificates</h2>
+
+    <div class="certificates">
+        <img src="certificate1.jpg" alt="">
+        <img src="certificate2.jpg" alt="">
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Completed Web Development Course</li>
+        <li>Participated in Coding Competition</li>
+        <li>Strong Academic Performance</li>
+    </ul>
 </section>
 
 <!-- CONTACT -->
