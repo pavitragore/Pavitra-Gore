@@ -1,51 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<nav>
-  <h2>Portfolio</h2>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#achievements">Certificates</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section id="home" class="hero">
-  <div>
-    <h1>Hello, I'm <span>Pavitra</span></h1>
-    <p>BCA Student | Web Developer</p>
-    <button onclick="scrollToSection()">Explore</button>
-  </div>
-  <img src="images/profile.jpg">
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a passionate BCA student interested in web development.
-    I love creating clean, modern, and responsive websites.
-  </p>
-</section>
-
 <!-- PROJECTS -->
 <section id="projects" class="section project-section">
   <h2>Projects</h2>
 
+  <!-- PROJECT 1 -->
   <div class="project-box">
     <div class="project-text">
       <h3>Portfolio Website</h3>
       <p>
-        A modern personal portfolio with responsive design, animations,
-        and clean UI.
+        A modern responsive portfolio website with animations,
+        smooth scrolling and clean UI design.
       </p>
     </div>
     <div class="project-img">
@@ -53,39 +16,50 @@
     </div>
   </div>
 
+  <!-- PROJECT 2 (REVERSE DESIGN) -->
+  <div class="project-box reverse">
+    <div class="project-img">
+      <img src="images/project2.jpg">
+    </div>
+    <div class="project-text">
+      <h3>Library Management API</h3>
+      <p>
+        Built REST API using Node.js with CRUD operations,
+        validation and JSON responses.
+      </p>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
   <div class="project-box">
     <div class="project-text">
-      <h3>Library API</h3>
+      <h3>Bus Booking System</h3>
       <p>
-        REST API built using Node.js with CRUD operations and validation.
+        Booking system with GET, POST, PUT and DELETE functionality.
       </p>
     </div>
     <div class="project-img">
-      <img src="images/project2.jpg">
+      <img src="images/project3.jpg">
     </div>
   </div>
 
 </section>
 
+
 <!-- CERTIFICATES -->
 <section id="achievements" class="section cert-section">
   <h2>Certificates</h2>
 
-  <div class="cert-cards">
+  <div class="cert-container">
 
-    <div class="cert-card">
+    <div class="cert-card big">
       <h3>Web Development</h3>
-      <p>Completed full course</p>
+      <p>Completed full stack course</p>
     </div>
 
     <div class="cert-card">
       <h3>Java Programming</h3>
-      <p>Certification</p>
-    </div>
-
-    <div class="cert-card">
-      <h3>Hackathon</h3>
-      <p>Participation Certificate</p>
+      <p>Certified course</p>
     </div>
 
     <div class="cert-card">
@@ -93,9 +67,10 @@
       <p>Beginner to Advanced</p>
     </div>
 
+    <div class="cert-card wide">
+      <h3>Hackathon</h3>
+      <p>Participation Certificate</p>
+    </div>
+
   </div>
 </section>
-
-<script src="script.js"></script>
-</body>
-</html>
