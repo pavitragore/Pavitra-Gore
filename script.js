@@ -1,17 +1,11 @@
-// Smooth scroll
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href'))
-      .scrollIntoView({ behavior: 'smooth' });
+function scrollToSection() {
+  document.getElementById("about").scrollIntoView({
+    behavior: "smooth"
   });
-});
-
-// Footer year
-document.getElementById("footer-text").innerHTML =
-  `© ${new Date().getFullYear()} Your Name`;
-
-// Button
-function showMessage() {
-  alert("Thank you for visiting my portfolio!");
 }
+
+// simple alert on submit
+document.querySelector("form").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Message Sent!");
+});
