@@ -1,21 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI';
   box-sizing: border-box;
+  font-family: 'Segoe UI';
 }
 
 body {
-  background: #f5f5f5;
+  background: #f9f9f9;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 60px;
   background: #000;
-  color: #fff;
+  color: white;
 }
 
 nav ul {
@@ -24,7 +24,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 nav a {
@@ -38,87 +38,90 @@ nav a {
   justify-content: space-around;
   align-items: center;
   height: 90vh;
-  background: linear-gradient(to right, #ffd000, #fff);
+  background: linear-gradient(135deg, #ffd000, #fff);
+  padding: 40px;
 }
 
 .hero img {
-  width: 300px;
+  width: 320px;
   border-radius: 20px;
 }
 
-.hero-text span {
-  color: #ffcc00;
+.hero span {
+  color: #000;
+  font-weight: bold;
 }
 
-/* BUTTON */
 button {
-  padding: 10px 20px;
-  background: #000;
-  color: #fff;
+  padding: 12px 25px;
+  background: black;
+  color: white;
   border: none;
+  margin-top: 15px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 button:hover {
-  background: #ffcc00;
+  background: #ffd000;
   color: black;
 }
 
-/* SECTIONS */
-section {
-  padding: 50px;
+/* GENERAL SECTION */
+.section {
+  padding: 80px 60px;
   text-align: center;
 }
 
-/* ABOUT */
-.about-box {
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+/* PROJECTS */
+.project-section {
+  background: #fff3cc;
+}
+
+.project-box {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  margin: 40px 0;
+  gap: 40px;
 }
 
-.about-box img {
-  width: 200px;
-  border-radius: 10px;
+.project-text {
+  width: 50%;
+  text-align: left;
 }
 
-/* CARDS */
-.cards {
+.project-img img {
+  width: 350px;
+  border-radius: 15px;
+}
+
+/* CERTIFICATES */
+.cert-section {
+  background: #000;
+  color: white;
+}
+
+.cert-cards {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
-.card {
-  background: white;
+.cert-card {
+  background: #ffd000;
+  color: black;
   padding: 20px;
-  width: 250px;
+  width: 220px;
   border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.card:hover {
+.cert-card:hover {
   transform: scale(1.05);
-}
-
-/* CONTACT */
-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: auto;
-}
-
-input, textarea {
-  margin: 10px 0;
-  padding: 10px;
 }
