@@ -1,42 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Portfolio</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div>
+    <h1>Hello, I'm <span>Pavitra</span></h1>
+    <p>BCA Student | Web Developer</p>
+    <button onclick="scrollToSection()">Explore</button>
+  </div>
+  <img src="images/profile.jpg">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate BCA student interested in web development.
+    I love creating modern and responsive websites.
+  </p>
+</section>
+
 <!-- PROJECTS -->
 <section id="projects" class="section project-section">
   <h2>Projects</h2>
 
-  <!-- PROJECT 1 -->
   <div class="project-box">
     <div class="project-text">
       <h3>Portfolio Website</h3>
-      <p>
-        A modern responsive portfolio website with animations,
-        smooth scrolling and clean UI design.
-      </p>
+      <p>Modern responsive portfolio design with animations.</p>
     </div>
     <div class="project-img">
       <img src="images/project1.jpg">
     </div>
   </div>
 
-  <!-- PROJECT 2 (REVERSE DESIGN) -->
   <div class="project-box reverse">
     <div class="project-img">
       <img src="images/project2.jpg">
     </div>
     <div class="project-text">
-      <h3>Library Management API</h3>
-      <p>
-        Built REST API using Node.js with CRUD operations,
-        validation and JSON responses.
-      </p>
+      <h3>Library API</h3>
+      <p>Node.js REST API with CRUD operations.</p>
     </div>
   </div>
 
-  <!-- PROJECT 3 -->
   <div class="project-box">
     <div class="project-text">
-      <h3>Bus Booking System</h3>
-      <p>
-        Booking system with GET, POST, PUT and DELETE functionality.
-      </p>
+      <h3>Bus Booking</h3>
+      <p>Ticket booking system using API methods.</p>
     </div>
     <div class="project-img">
       <img src="images/project3.jpg">
@@ -45,32 +74,44 @@
 
 </section>
 
-
 <!-- CERTIFICATES -->
 <section id="achievements" class="section cert-section">
   <h2>Certificates</h2>
 
   <div class="cert-container">
-
     <div class="cert-card big">
       <h3>Web Development</h3>
-      <p>Completed full stack course</p>
+      <p>Full course completed</p>
     </div>
 
     <div class="cert-card">
-      <h3>Java Programming</h3>
-      <p>Certified course</p>
+      <h3>Java</h3>
+      <p>Certification</p>
     </div>
 
     <div class="cert-card">
       <h3>Python</h3>
-      <p>Beginner to Advanced</p>
+      <p>Advanced Course</p>
     </div>
 
     <div class="cert-card wide">
       <h3>Hackathon</h3>
-      <p>Participation Certificate</p>
+      <p>Participation</p>
     </div>
-
   </div>
 </section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
