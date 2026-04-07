@@ -1,9 +1,85 @@
-/* BIG SECTION SPACING */
-.section {
-  padding: 100px 80px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
 }
 
-/* PROJECT SECTION */
+body {
+  background: #f9f9f9;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #000;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid #ffd000;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(135deg, #ffd000, #fff);
+  padding: 40px;
+}
+
+.hero img {
+  width: 320px;
+  border-radius: 20px;
+}
+
+.hero span {
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffd000;
+  color: black;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+/* PROJECTS */
 .project-section {
   background: linear-gradient(135deg, #fff3cc, #ffffff);
 }
@@ -22,17 +98,7 @@
 
 .project-text {
   width: 50%;
-}
-
-.project-text h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #000;
-}
-
-.project-text p {
-  font-size: 18px;
-  color: #333;
+  text-align: left;
 }
 
 .project-img img {
@@ -41,7 +107,7 @@
   box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
 }
 
-/* CERTIFICATES SECTION */
+/* CERTIFICATES */
 .cert-section {
   background: linear-gradient(135deg, #000, #222);
   color: white;
@@ -59,22 +125,42 @@
   color: black;
   padding: 30px;
   border-radius: 20px;
-  font-size: 18px;
   transition: 0.3s;
 }
 
-/* BIG CARD */
 .cert-card.big {
   grid-column: span 2;
-  font-size: 22px;
 }
 
-/* WIDE CARD */
 .cert-card.wide {
   grid-column: span 2;
 }
 
-/* HOVER */
 .cert-card:hover {
   transform: scale(1.05);
+}
+
+/* CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.6s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
