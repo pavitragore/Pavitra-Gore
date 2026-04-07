@@ -1,127 +1,80 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI';
-}
-
-body {
-  background: #f9f9f9;
-}
-
-/* NAV */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: #000;
-  color: white;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 25px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90vh;
-  background: linear-gradient(135deg, #ffd000, #fff);
-  padding: 40px;
-}
-
-.hero img {
-  width: 320px;
-  border-radius: 20px;
-}
-
-.hero span {
-  color: #000;
-  font-weight: bold;
-}
-
-button {
-  padding: 12px 25px;
-  background: black;
-  color: white;
-  border: none;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #ffd000;
-  color: black;
-}
-
-/* GENERAL SECTION */
+/* BIG SECTION SPACING */
 .section {
-  padding: 80px 60px;
-  text-align: center;
+  padding: 100px 80px;
 }
 
-.section h2 {
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-
-/* PROJECTS */
+/* PROJECT SECTION */
 .project-section {
-  background: #fff3cc;
+  background: linear-gradient(135deg, #fff3cc, #ffffff);
 }
 
 .project-box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
-  gap: 40px;
+  justify-content: space-between;
+  margin: 80px 0;
+  gap: 50px;
+}
+
+.project-box.reverse {
+  flex-direction: row-reverse;
 }
 
 .project-text {
   width: 50%;
-  text-align: left;
+}
+
+.project-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.project-text p {
+  font-size: 18px;
+  color: #333;
 }
 
 .project-img img {
-  width: 350px;
-  border-radius: 15px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
 }
 
-/* CERTIFICATES */
+/* CERTIFICATES SECTION */
 .cert-section {
-  background: #000;
+  background: linear-gradient(135deg, #000, #222);
   color: white;
 }
 
-.cert-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.cert-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 50px;
 }
 
 .cert-card {
   background: #ffd000;
   color: black;
-  padding: 20px;
-  width: 220px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 18px;
   transition: 0.3s;
 }
 
+/* BIG CARD */
+.cert-card.big {
+  grid-column: span 2;
+  font-size: 22px;
+}
+
+/* WIDE CARD */
+.cert-card.wide {
+  grid-column: span 2;
+}
+
+/* HOVER */
 .cert-card:hover {
   transform: scale(1.05);
 }
