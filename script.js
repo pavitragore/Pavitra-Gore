@@ -1,14 +1,16 @@
-// simple scroll animation
-window.addEventListener("scroll", () => {
-    let sections = document.querySelectorAll(".section");
+const pages = document.querySelectorAll(".page");
 
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 300;
+function showOnScroll() {
+    pages.forEach(page => {
+        const top = window.scrollY;
+        const offset = page.offsetTop - 400;
 
         if (top > offset) {
-            sec.style.opacity = 1;
-            sec.style.transform = "translateY(0)";
+            page.style.opacity = "1";
+            page.style.transform = "translateY(0)";
         }
     });
-});
+}
+
+window.addEventListener("scroll", showOnScroll);
+window.addEventListener("load", showOnScroll);
