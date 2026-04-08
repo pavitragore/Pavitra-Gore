@@ -1,91 +1,123 @@
-body {
-    margin: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: Arial;
-    background: #f4f4f4;
 }
 
-/* FULL PAGE SECTIONS */
-.page {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-    background: #f5f5f5;
+body{
+    background:#f5f5f5;
 }
 
-/* HERO COLOR */
-.hero {
-    background: #e6d3b3;
+/* PAGE */
+.page{
+    height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px;
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+/* HERO */
+.hero{
+    background:#e6d3b3;
 }
 
 /* TEXT */
-h1 {
-    font-size: 60px;
-    color: #4b2e1e;
+h1{
+    font-size:60px;
+    color:#4b2e1e;
 }
 
-h2 {
-    background: #6b4b2a;
-    color: white;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
+h2{
+    background:#6b4b2a;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    display:inline-block;
+    margin:10px 0;
 }
 
-p {
-    max-width: 400px;
-    color: #333;
+p{
+    max-width:400px;
 }
 
 /* LAYOUT */
-.left, .right {
-    width: 40%;
+.left,.right{
+    width:40%;
+}
+
+/* CENTER SECTION */
+.center{
+    flex-direction:column;
+    text-align:center;
 }
 
 /* DIAMOND IMAGE */
-.diamond {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    transform: rotate(45deg);
-    border: 8px solid #b08968;
+.diamond-box{
+    width:250px;
+    height:250px;
+    transform:rotate(45deg);
+    overflow:hidden;
+    border:8px solid #b08968;
 }
 
-.diamond:hover {
-    transform: rotate(45deg) scale(1.05);
+.diamond-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:rotate(-45deg) scale(1.4);
+}
+
+/* SMALL DIAMOND */
+.small{
+    width:180px;
+    height:180px;
 }
 
 /* SKILLS */
-.skills {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 20px;
+.skills{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-size:20px;
 }
 
-/* PROJECT */
-.project {
-    background: white;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0 0 10px gray;
+/* PROJECTS */
+.projects{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
 }
 
 /* CONTACT */
-.contact {
-    text-align: center;
+.contact{
+    flex-direction:column;
+    text-align:center;
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-    .page {
-        flex-direction: column;
-        text-align: center;
+    .page{
+        flex-direction:column;
+        text-align:center;
     }
 
-    .left, .right {
-        width: 100%;
+    .left,.right{
+        width:100%;
+    }
+
+    h1{
+        font-size:40px;
     }
 }
