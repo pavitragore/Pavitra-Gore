@@ -1,66 +1,14 @@
-// Smooth Scroll
-document.querySelectorAll("nav a").forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-// Active Navbar
+// simple scroll animation
 window.addEventListener("scroll", () => {
-  let sections = document.querySelectorAll("section");
-  let navLinks = document.querySelectorAll("nav a");
+    let sections = document.querySelectorAll(".section");
 
-  sections.forEach(sec => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 300;
 
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        document.querySelector(`nav a[href="#${id}"]`)
-          .classList.add("active");
-      });
-    }
-  });
-});
-
-// Scroll Animation
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
-
-document.querySelectorAll(".project-box, .cert-card, h2")
-  .forEach(el => {
-    el.classList.add("hidden");
-    observer.observe(el);
-  });
-
-// Button Scroll
-function scrollToSection() {
-  document.getElementById("projects")
-    .scrollIntoView({ behavior: "smooth" });
-}
-
-// Form Alert
-document.querySelector("form").addEventListener("submit", e => {
-  e.preventDefault();
-  alert("Message Sent 🚀");
-});
-
-// Image Hover Effect
-document.querySelectorAll(".project-img img").forEach(img => {
-  img.addEventListener("mouseenter", () => {
-    img.style.transform = "scale(1.1)";
-  });
-  img.addEventListener("mouseleave", () => {
-    img.style.transform = "scale(1)";
-  });
+        if (top > offset) {
+            sec.style.opacity = 1;
+            sec.style.transform = "translateY(0)";
+        }
+    });
 });
