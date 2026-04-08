@@ -123,6 +123,36 @@ p{
     text-align:center;
 }
 
+/* ABOUT CARDS */
+.about-cards{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.about-card{
+    background:white;
+    padding:15px 20px;
+    border-radius:10px;
+    border-left:6px solid #b08968;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.about-card:hover{
+    transform:translateX(5px);
+}
+
+.about-card h3{
+    color:#6b4b2a;
+    margin-bottom:5px;
+}
+
+.about-card p{
+    font-size:14px;
+    margin:0;
+}
+
 /* CONTACT */
 .contact{
     flex-direction:column;
