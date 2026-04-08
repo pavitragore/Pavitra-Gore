@@ -68,7 +68,27 @@ p{
     text-align:center;
 }
 
-/* DIAMOND */
+/* SQUARE IMAGE */
+.square-box{
+    width:220px;
+    height:220px;
+    border:6px solid #b08968;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.square-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.square-box.small{
+    width:180px;
+    height:180px;
+}
+
+/* DIAMOND IMAGE */
 .diamond-box{
     width:220px;
     height:220px;
@@ -99,7 +119,7 @@ p{
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* SKILLS CIRCLES */
+/* SKILLS */
 .skill-circles{
     display:flex;
     gap:25px;
@@ -118,11 +138,6 @@ p{
     align-items:center;
     font-weight:bold;
     box-shadow:0 5px 10px rgba(0,0,0,0.2);
-    transition:0.3s;
-}
-
-.circle:hover{
-    transform:scale(1.1);
 }
 
 /* PROJECTS */
@@ -139,7 +154,6 @@ p{
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
     overflow:hidden;
-    transition:0.3s;
 }
 
 .project-card img{
@@ -154,10 +168,6 @@ p{
 
 .project-card p{
     margin:0 10px 10px;
-}
-
-.project-card:hover{
-    transform:translateY(-5px);
 }
 
 /* CERTIFICATES */
@@ -180,7 +190,6 @@ p{
     width:100%;
     height:120px;
     object-fit:cover;
-    border-radius:5px;
 }
 
 /* CONTACT */
@@ -198,3 +207,11 @@ p{
         width:100%;
     }
 }
+
+/* BACKGROUNDS */
+.page:nth-child(2){ background:#f8f1e7; }
+.page:nth-child(3){ background:#f3e5d8; }
+.page:nth-child(4){ background:#ede0d4; }
+.page:nth-child(5){ background:#e6ccb2; }
+.page:nth-child(6){ background:#f5ebe0; }
+.page:nth-child(7){ background:#e3d5ca; }
