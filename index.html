@@ -7,11 +7,28 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Pavitra</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle">☰</div>
+</nav>
+
 <!-- HERO -->
-<section class="page hero">
+<section id="home" class="page hero">
     <div class="left">
         <div class="square-box">
-            <img src="images/profile.jpeg" alt="Profile">
+            <img src="images/profile.jpeg">
         </div>
     </div>
     <div class="right">
@@ -20,45 +37,45 @@
 </section>
 
 <!-- INTRO -->
-<section class="page">
+<section id="intro" class="page">
     <div class="left">
         <h1>Introduction</h1>
         <h2>BCA First Year Student</h2>
-        <p>I am a passionate student eager to build modern websites and learn new technologies.</p>
+        <p>I am a passionate student eager to build modern websites.</p>
     </div>
     <div class="right">
         <div class="square-box small">
-            <img src="images/profile.jpeg" alt="">
+            <img src="images/profile.jpeg">
         </div>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section class="page">
+<section id="about" class="page">
     <div class="left">
         <h1>About Me</h1>
 
         <div class="about-cards">
             <div class="about-card">
                 <h3>10th</h3>
-                <p>Completed with strong academic base and interest in computers.</p>
+                <p>Strong academic base.</p>
             </div>
 
             <div class="about-card">
                 <h3>12th</h3>
-                <p>Improved logical thinking and chose IT field.</p>
+                <p>Improved logical thinking.</p>
             </div>
 
             <div class="about-card">
-                <h3>BCA First Year</h3>
-                <p>Learning programming and web development.</p>
+                <h3>BCA</h3>
+                <p>Learning development.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- SKILLS -->
-<section class="page center">
+<section id="skills" class="page center">
     <h1>Skills</h1>
 
     <div class="skill-circles">
@@ -71,32 +88,35 @@
 </section>
 
 <!-- PROJECTS -->
-<section class="page center">
+<section id="projects" class="page center">
     <h1>Projects</h1>
 
     <div class="projects">
         <div class="project-card">
             <img src="images/Project.png">
             <h3>Online Quiz Application</h3>
-            <p>The Online Quiz App is an effective tool for conducting tests and evaluating knowledge in a quick and efficient way.</p>
+            <p>The Online Quiz App is an effective tool for conducting tests and evaluating knowledge in a quick and efficient way.
+                It makes learning interactive and provides instant feedback to users.</p>
         </div>
 
         <div class="project-card">
             <img src="images/resume.png">
             <h3>Resume Analyzer</h3>
-            <p>The Resume Analyzer helps automate the resume screening process, making recruitment faster and more efficient.</p>
+            <p>The Resume Analyzer helps automate the resume screening process, making recruitment faster and more efficient.
+                It reduces manual effort and improves the accuracy of selecting suitable candidates. 
+                By using technologies like Python, Natural Language Processing (NLP).</p>
         </div>
     </div>
 </section>
 
 <!-- CERTIFICATES -->
-<section class="page center">
+<section id="certificates" class="page center">
     <h1>Certificates</h1>
 
     <div class="certificates">
         <div class="cert-card">
             <img src="images/Modern AI.png">
-            <p>Introduction To Modern AI</p>
+            <p>Introduction to Modern AI</p>
         </div>
 
         <div class="cert-card">
@@ -106,21 +126,18 @@
 
         <div class="cert-card">
             <img src="images/intro to c program.jpeg">
-            <p>Introduction To C Program</p>
+            <p>Introduction to C Programming</p>
         </div>
     </div>
 </section>
 
-<!-- CONTACT (UPDATED) -->
-<section class="page contact-section">
+<!-- CONTACT -->
+<section id="contact" class="page contact-section">
 
     <div class="contact-left">
         <h1>Get in Touch</h1>
-        <h2>I'd like to hear from you!</h2>
-
-        <p>If you have any inquiries or just want to say hi, please use the contact form!</p>
-
-        <p>📧 your@email.com</p>
+        <p>Contact me anytime.</p>
+        <p>pavitragore@email.com</p>
     </div>
 
     <div class="contact-right">
@@ -131,10 +148,9 @@
             </div>
 
             <input type="email" placeholder="Email">
-
             <textarea placeholder="Message"></textarea>
 
-            <button type="submit">Send</button>
+            <button>Send</button>
         </form>
     </div>
 
