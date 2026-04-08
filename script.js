@@ -3,7 +3,7 @@ const pages = document.querySelectorAll(".page");
 function showOnScroll() {
     pages.forEach(page => {
         const top = window.scrollY;
-        const offset = page.offsetTop - 400;
+        const offset = page.offsetTop - 300;
 
         if (top > offset) {
             page.style.opacity = "1";
