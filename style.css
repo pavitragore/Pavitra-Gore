@@ -1,73 +1,91 @@
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: Arial;
+    background: #f4f4f4;
 }
 
-body {
+/* FULL PAGE SECTIONS */
+.page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
     background: #f5f5f5;
 }
 
-/* HERO */
+/* HERO COLOR */
 .hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 60px;
-    background: #d2b48c;
-    color: #3e2c1c;
+    background: #e6d3b3;
 }
 
-.hero img {
-    width: 200px;
-    border-radius: 20px;
+/* TEXT */
+h1 {
+    font-size: 60px;
+    color: #4b2e1e;
 }
 
-/* SECTION */
-.section {
-    padding: 50px;
-    text-align: center;
-}
-
-.section h2 {
-    color: #5a3e2b;
-    margin-bottom: 20px;
-}
-
-/* SKILLS */
-.skill-box {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.skill-box div {
-    background: #d2b48c;
+h2 {
+    background: #6b4b2a;
+    color: white;
+    display: inline-block;
     padding: 10px 20px;
     border-radius: 20px;
 }
 
-/* PROJECTS */
+p {
+    max-width: 400px;
+    color: #333;
+}
+
+/* LAYOUT */
+.left, .right {
+    width: 40%;
+}
+
+/* DIAMOND IMAGE */
+.diamond {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transform: rotate(45deg);
+    border: 8px solid #b08968;
+}
+
+.diamond:hover {
+    transform: rotate(45deg) scale(1.05);
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+/* PROJECT */
 .project {
     background: white;
-    margin: 15px auto;
     padding: 20px;
-    width: 60%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px gray;
 }
 
 /* CONTACT */
-.contact p {
-    margin: 10px;
+.contact {
+    text-align: center;
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-    .hero {
+    .page {
         flex-direction: column;
         text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
     }
 }
