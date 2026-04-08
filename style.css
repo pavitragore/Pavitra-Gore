@@ -1,4 +1,15 @@
-/* DEFAULT PAGE */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* PAGE */
 .page{
     height:100vh;
     display:flex;
@@ -10,39 +21,137 @@
     transition:1s;
 }
 
-/* HERO (keep same) */
+/* HERO */
 .hero{
     background:#e6d3b3;
 }
 
-/* DIFFERENT ELEGANT BACKGROUNDS */
+/* TEXT */
+h1{
+    font-size:60px;
+    color:#4b2e1e;
+}
+
+h2{
+    background:#6b4b2a;
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    display:inline-block;
+    margin:10px 0;
+}
+
+p{
+    max-width:400px;
+}
+
+/* LAYOUT */
+.left,.right{
+    width:40%;
+}
+
+/* CENTER SECTION */
+.center{
+    flex-direction:column;
+    text-align:center;
+}
+
+/* DIAMOND IMAGE */
+.diamond-box{
+    width:250px;
+    height:250px;
+    transform:rotate(45deg);
+    overflow:hidden;
+    border:8px solid #b08968;
+}
+
+.diamond-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:rotate(-45deg) scale(1.4);
+}
+
+/* SMALL DIAMOND */
+.small{
+    width:180px;
+    height:180px;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-size:20px;
+}
+
+/* PROJECTS */
+.projects{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+/* CONTACT */
+.contact{
+    flex-direction:column;
+    text-align:center;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .page{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .left,.right{
+        width:100%;
+    }
+
+    h1{
+        font-size:40px;
+    }
+}
+
+/* ============================= */
+/* 🎨 BACKGROUND COLORS ADDED */
+/* ============================= */
 
 /* Introduction */
 .page:nth-child(2){
-    background:#f8f1e7;  /* light cream */
+    background:#f8f1e7;
 }
 
 /* About Me */
 .page:nth-child(3){
-    background:#f3e5d8;  /* soft peach */
+    background:#f3e5d8;
 }
 
 /* Skills */
 .page:nth-child(4){
-    background:#ede0d4;  /* beige tone */
+    background:#ede0d4;
 }
 
 /* Projects */
 .page:nth-child(5){
-    background:#e6ccb2;  /* warm tan */
+    background:#e6ccb2;
 }
 
 /* Certifications */
 .page:nth-child(6){
-    background:#f5ebe0;  /* off white elegant */
+    background:#f5ebe0;
 }
 
 /* Contact */
 .page:nth-child(7){
-    background:#e3d5ca;  /* soft brown */
+    background:#e3d5ca;
 }
