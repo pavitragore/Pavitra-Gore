@@ -11,11 +11,12 @@ body{
 
 /* PAGE */
 .page{
-    height:100vh;
+    min-height:100vh;
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
-    padding:50px;
+    gap:50px;
+    padding:60px 10%;
     opacity:0;
     transform:translateY(50px);
     transition:1s;
@@ -28,8 +29,9 @@ body{
 
 /* TEXT */
 h1{
-    font-size:60px;
+    font-size:55px;
     color:#4b2e1e;
+    margin-bottom:15px;
 }
 
 h2{
@@ -43,14 +45,28 @@ h2{
 
 p{
     max-width:400px;
+    margin-top:10px;
+    line-height:1.6;
 }
 
 /* LAYOUT */
-.left,.right{
-    width:40%;
+.left, .right{
+    width:45%;
 }
 
-/* CENTER SECTION */
+.left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CENTER */
 .center{
     flex-direction:column;
     text-align:center;
@@ -58,21 +74,24 @@ p{
 
 /* DIAMOND IMAGE */
 .diamond-box{
-    width:250px;
-    height:250px;
+    width:220px;
+    height:220px;
     transform:rotate(45deg);
     overflow:hidden;
-    border:8px solid #b08968;
+    border:6px solid #b08968;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .diamond-box img{
-    width:100%;
-    height:100%;
+    width:140%;
+    height:140%;
     object-fit:cover;
-    transform:rotate(-45deg) scale(1.4);
+    transform:rotate(-45deg);
 }
 
-/* SMALL DIAMOND */
+/* SMALL */
 .small{
     width:180px;
     height:180px;
@@ -82,22 +101,26 @@ p{
 .skills{
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:12px;
     font-size:20px;
+    align-items:center;
 }
 
 /* PROJECTS */
 .projects{
     display:flex;
-    gap:20px;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 .card{
     background:white;
     padding:20px;
-    width:250px;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
+    width:260px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
 }
 
 /* CONTACT */
@@ -111,10 +134,16 @@ p{
     .page{
         flex-direction:column;
         text-align:center;
+        gap:30px;
     }
 
     .left,.right{
         width:100%;
+    }
+
+    .diamond-box{
+        width:180px;
+        height:180px;
     }
 
     h1{
@@ -122,36 +151,10 @@ p{
     }
 }
 
-/* ============================= */
-/* 🎨 ONLY BACKGROUND COLORS ADDED */
-/* ============================= */
-
-/* Introduction */
-.page:nth-child(2){
-    background:#f8f1e7;
-}
-
-/* About Me */
-.page:nth-child(3){
-    background:#f3e5d8;
-}
-
-/* Skills */
-.page:nth-child(4){
-    background:#ede0d4;
-}
-
-/* Projects */
-.page:nth-child(5){
-    background:#e6ccb2;
-}
-
-/* Certifications */
-.page:nth-child(6){
-    background:#f5ebe0;
-}
-
-/* Contact */
-.page:nth-child(7){
-    background:#e3d5ca;
-}
+/* BACKGROUNDS */
+.page:nth-child(2){ background:#f8f1e7; }
+.page:nth-child(3){ background:#f3e5d8; }
+.page:nth-child(4){ background:#ede0d4; }
+.page:nth-child(5){ background:#e6ccb2; }
+.page:nth-child(6){ background:#f5ebe0; }
+.page:nth-child(7){ background:#e3d5ca; }
