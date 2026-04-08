@@ -14,7 +14,7 @@ function showOnScroll() {
 window.addEventListener("scroll", showOnScroll);
 window.addEventListener("load", showOnScroll);
 
-/* NAVBAR */
+/* NAVBAR TOGGLE */
 const menu = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
